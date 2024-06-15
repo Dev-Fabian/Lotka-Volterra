@@ -10,7 +10,7 @@ public class Main {
         System.out.println("----------------------------------------");
         System.out.println("Willkommen zur Lotka-Volterra Simulation");
         System.out.println("Autor: Fabian");
-        System.out.println("Version: 1.0.0");
+        System.out.println("Version: 2.0.0");
         System.out.println("----------------------------------------");
         
         double alpha = scanner.nextDouble();
