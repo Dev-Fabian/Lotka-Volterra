@@ -13,12 +13,19 @@ public class Main {
         System.out.println("Version: 2.0.0");
         System.out.println("----------------------------------------");
         
+        System.out.print("Wert für alpha: ");
         double alpha = scanner.nextDouble();
+        System.out.print("Wert für beta: ");
         double beta = scanner.nextDouble();
+        System.out.print("Wert für gamma: ");
         double gamma = scanner.nextDouble();
+        System.out.print("Wert für delta: ");
         double delta = scanner.nextDouble();
+        System.out.print("Wert für t: ");
         double t = scanner.nextDouble();
+        System.out.print("Startanzahl der Beutetiere: ");
         double prey = scanner.nextDouble();
+        System.out.print("Startanzahl der Räubertiere: ");
         double predator = scanner.nextDouble();
         
         scanner.close();
