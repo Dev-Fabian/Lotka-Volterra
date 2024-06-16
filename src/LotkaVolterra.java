@@ -19,6 +19,8 @@ public class LotkaVolterra {
     private double newvalueoft;
     private double oldPrey;
     private double oldPredator;
+    private double minimaly = 0;
+    private double maximaly = 0;
 	
 	public LotkaVolterra(double alpha, double beta, double gamma, double delta, double t, double prey, double predator) {
 		super();
@@ -113,8 +115,30 @@ public class LotkaVolterra {
         }
         System.out.println();
         System.out.println("Berechnungen erfolgreich abgeschlossen, im Projektordner befindet sich nun eine Datei 'output.txt'.");
+	}
+	
+	public void showPlotSettings() {
+		if (preyMinimaly < predatorMinimaly) {
+            minimaly = preyMinimaly;
+        } else if (predatorMinimaly < preyMinimaly) {
+            minimaly = predatorMinimaly;
+        } else if (preyMinimaly == predatorMinimaly) {
+            minimaly = preyMinimaly;
+        }
 
-		
+        
+        if (preyMaximaly > predatorMaximaly) {
+            maximaly = preyMaximaly;
+        } else if (predatorMaximaly > preyMaximaly) {
+            maximaly = predatorMaximaly;
+        } else if (preyMaximaly == predatorMaximaly) {
+            maximaly = preyMaximaly;
+        }
+
+        System.out.println();
+        System.out.println("Empfohlene Einstellungen zum plotten:");
+        System.out.println("X-Achse: 0-" + Math.round(t));
+        System.out.println("Y-Achse: " + Math.round(minimaly) + "-" + Math.round(maximaly));
 	}
 	
 	
